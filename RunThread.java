@@ -66,7 +66,6 @@ public class RunThread extends Thread {
 					
 				}
 				twoOutput.write(packet, 0, countRead);
-//				packet = new byte[4096];
 			}
 		}
 		catch(SocketTimeoutException e2){
@@ -76,26 +75,6 @@ public class RunThread extends Thread {
 			System.err.println("Error getting client's data: " + e.getMessage());
 		}
 	}
-	
-	
-	/**
-	 * TCP Data Transfer
-	 */
-//	private void TCPDataTransfer() {
-//		try {
-//			twoOutput.write(packet);
-//			packet = new byte[4096];
-//			String packetS = "";
-//			while (oneInput.read(packet) != -1) {
-////				oneInput.read(packet);
-//				packetS = new String(packet);
-//				twoOutput.write(packet);
-//				packet = new byte[4096];
-//			}
-//		}
-//		catch (Exception e) {
-//				System.err.println("Error getting client's data: " + e.getMessage());
-//		}	
-//	}
-	
+
+
 }
